@@ -1,24 +1,29 @@
-package week2.day1.classroomactivity;
+package week.day2;
 
 public class Browser {
-	
-	public String launchBrowser(String s)
-	{
-	//System.out.println("Browser launched successfully");
-		return s;
-	}
-	
-	public void launchUrl()
-	{
-		System.out.println("launch url");
-	}
 
+	public void openUrl()
+	{
+		System.out.println("Opening the Url");
+		
+	}
+	
+	public void closeBrowser()
+	{
+		System.out.println("Closing the browser");
+	}
+	
+	public void navigateBack()
+	{
+		System.out.println("Navigating back");
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-Browser chrome=new Browser();
-System.out.println(chrome.launchBrowser("Launch Chrome Browser"));
-
-chrome.launchUrl();
+Browser openurl=new Browser();
+openurl.openUrl();
+openurl.closeBrowser();
+openurl.navigateBack();
 	}
 
 }
